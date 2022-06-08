@@ -1,0 +1,31 @@
+.chat-input-bar {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.chat-input-bar label {
+    display: none;
+}
+
+.chat-input-bar input {
+    padding: 0.75rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    margin-right: 0.5rem;
+
+    width: calc(100% - 40px - 3.5rem);
+}
+
+.chat-input-bar button {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    border: 1px solid red;
+}

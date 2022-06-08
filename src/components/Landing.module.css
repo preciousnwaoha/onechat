@@ -1,0 +1,55 @@
+.landing {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-900);
+}
+
+.open {
+    animation: open .3s ease-in-out forwards;
+}
+
+@keyframes open {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.landing div {
+    border: 1px solid red;
+    text-align: center;
+    max-width: calc(100% - 1rem);
+    
+}
+
+.landing h1 {
+    border: 1px solid red;
+    color: var(--white-700)
+}
+
+.landing h4 {
+    color: var(--white-400)
+}
+
+.landing button {
+    position: absolute;
+    bottom: 1rem;
+    color: var(--white-700);
+    border: none;
+    cursor: pointer;
+    border: 1px solid red;
+    padding: 1rem 1.5rem;
+    min-width: 200px;
+    border-radius: 0.25rem;
+    background: var(--primary-600);
+}
+

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Landing from "./components/Landing";
+import "./App.css";
+import Rooms from "./components/CreateRoom/Rooms";
+import { useState } from "react";
+import ChatRoom from "./components/ChatRoom/ChatRoom";
+import { ChatContextProvider } from "./context/chat-context";
+
+
+// import { db } from "../firebase"
+
+// import {useCollectionData} from "react-firebase-hooks"
 
 function App() {
+  const [enterRoom, setEnterRoom] = useState(false);
+
+  const enterChatRoomHandler = () => {
+setEnterRoom(true);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ChatContextProvider>
+      <Landing />
+      {enterRoom && <ChatRoom />}
+      {!enterRoom && <Rooms onEnterChatRoom={enterChatRoomHandler} />}
+    </ChatContextProvider>
+      </>
   );
 }
 

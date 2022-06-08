@@ -1,0 +1,17 @@
+.create-room {
+    border: 1px solid red;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.create-btn {
+    color: var(--white-700);
+    border: none;
+    cursor: pointer;
+    
+    padding: 1rem 1.5rem;
+    min-width: 200px;
+    border-radius: 0.25rem;
+    background: var(--primary-600);
+}

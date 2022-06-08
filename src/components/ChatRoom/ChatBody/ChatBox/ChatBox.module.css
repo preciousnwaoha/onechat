@@ -1,0 +1,24 @@
+.chat-box {
+    border: 1px solid red;
+    max-width: 80%;
+    margin: 0.5rem;
+    display: flex;
+}
+
+.user-chat-box{
+    align-self: flex-end;
+}
+
+.pic-part {
+    border: 1px solid red;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+
+.user-chat-box .pic-part{
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
