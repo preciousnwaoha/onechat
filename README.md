@@ -1,1 +1,1 @@
-# Anonynous onetime chat Sessions/Meetings App
+# Anonynous Onetime Conversations/Meetings Web App
