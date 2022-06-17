@@ -5,7 +5,7 @@ import classes from "./NewChatRooms.module.css"
 const NewChatRoom = () => {
     const location = useLocation();
 
-    console.log(location);
+
 
     const queryParams = new URLSearchParams(location.search);
 
