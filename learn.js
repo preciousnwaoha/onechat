@@ -6,13 +6,6 @@ const counterReducer = (state = { counter: 0 }, action) => {
             counter: state.counter + 1,
         }
     }
-    // "react-redux": "^8.0.2",
-    //     "react-scripts": "^2.1.3",
-    //     "redux": "^4.2.0",
-
-    // "react-redux": "^8.0.2",
-    //     "react-scripts": "^2.1.3",
-    //     "redux": "^4.2.0",
     if (action.type === "decrement") {
         return {
             counter: state.counter - 1,
