@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import useInput from "../../hooks/use-input";
 import classes from "./CreateRoom.module.css";
 
-// import { db } from "../../../firebase";
-// import {collection, addDoc} from "firebase/firebase"
-
-// const chatRooms = collection(db, "chatRooms")
 
 const CreateRoom = ({onEnterChatRoom}) => {
   const [createRoom, setCreateRoom] = useState(false);

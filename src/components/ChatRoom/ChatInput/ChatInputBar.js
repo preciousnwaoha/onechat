@@ -25,7 +25,6 @@ const ChatInputBar = () => {
         }
 
         console.log("added", enteredMessage);
-
         messageResetHandler()
     }
 

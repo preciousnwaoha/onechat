@@ -5,7 +5,13 @@
 /.pnp
 .pnp.js
 
+<<<<<<< HEAD
 */v1.mp4
+=======
+# resetting this stuff
+/package-lock.json
+/package.json
+>>>>>>> fec12e5e4bb66d88090a4b9af07417de75763393
 
 # testing
 /coverage

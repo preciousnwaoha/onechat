@@ -9,10 +9,16 @@
     "firebase": "^9.8.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-redux": "^7.2.6",
     "react-firebase-hooks": "^5.0.3",
+<<<<<<< HEAD
     "react-redux": "^8.0.2",
     "react-scripts": "^2.1.3",
     "redux": "^4.2.0",
+=======
+    "react-scripts": "5.0.1",
+    "redux": "^4.1.2",
+>>>>>>> fec12e5e4bb66d88090a4b9af07417de75763393
     "web-vitals": "^2.1.4"
   },
   "scripts": {
