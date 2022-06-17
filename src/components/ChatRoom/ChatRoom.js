@@ -1,3 +1,4 @@
+import React from "react"
 import ChatBody from './ChatBody/ChatBody'
 import ChatHeader from './ChatHeader/ChatHeader'
 import ChatInput from './ChatInput/ChatInput'
@@ -9,7 +10,7 @@ const ChatRoom = () => {
   return (
     <div className={classes["chat-room"]}>
         <ChatHeader />
-        <ChatBody messages={messages} />
+        <ChatBody />
         <ChatInput />
     </div>
   )

@@ -10,6 +10,8 @@
   --black-stay: black;
   --chat-header-height: 54px;
   --chat-input-height: 54px;
+  --home-bottom-bar-height: 48px;
+  --home-top-bar-height: 48px;
 }
 
 body {

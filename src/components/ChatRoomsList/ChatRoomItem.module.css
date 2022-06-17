@@ -1,0 +1,6 @@
+.chat-room-item {
+    border: 2px solid black;
+    padding: 1rem;
+    border-top: none;
+    cursor: pointer;
+}

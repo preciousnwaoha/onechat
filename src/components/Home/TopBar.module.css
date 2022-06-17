@@ -1,0 +1,24 @@
+.top-bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    height: var(--home-top-bar-height);
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-chat-room {
+    border: 1px solid red;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}

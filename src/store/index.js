@@ -1,10 +1,12 @@
-import redux from 'redux';
+// import React from 'react';
+import { createStore } from 'redux';
 // import reactRedux from "react-redux";
 
 const DEFAULT_ROOMS = [
     {
         id: "r1",
-        name: "room 2",
+        name: "room 1",
+        roomDisplayPicture: "default",
         members: [
             "ghost-rebirth",
         ],
@@ -16,6 +18,7 @@ const DEFAULT_ROOMS = [
     {
         id: "r2",
         name: "room 2",
+        roomDisplayPicture: "default",
         members: [
             "ghost-rebirth",
         ],
@@ -27,6 +30,7 @@ const DEFAULT_ROOMS = [
     {
         id: "r3",
         name: "room 3",
+        roomDisplayPicture: "default",
         members: [
             "ghost-rebirth",
         ],
@@ -101,40 +105,32 @@ const DEFAULT_MSGS = [
     },
   ]
 
-const chatRoomsReducer = (state, action) => {
+const chatRoomsReducer = (state = { chatRooms: DEFAULT_ROOMS, addingNewRoom: false, user: USER, messages: DEFAULT_MSGS, }, action) => {
     switch (action.type) {
         case "CREATE_ROOM":
             // anyone can
-            return {
-                chatRooms: DEFAULT_ROOMS,
-            }
-            break;
-        
+            let newRooms = state.chatRooms.concat(action.room);
+            return { ...state, chatRooms: newRooms }
+        case "JOIN_ROOM":
+            // if invited
+            return { ...state }
         case "LEAVE_ROOM":
             // if password is saved or password expired or room expired
-            return {
-                chatRooms: DEFAULT_ROOMS,
-            }
+            return { ...state }
         
         case "SWITCH_ROOM":
             // if member of next room
-            return {
-                chatRooms: DEFAULT_ROOMS,
-            }
+            return { ...state }
 
         case "DELETE_ROOM":
             // if 50% + 1 allow
-            return {
-                chatRooms: DEFAULT_ROOMS,
-            }
+            return { ...state }
 
         default:
-            return {
-                chatRooms: DEFAULT_ROOMS,
-            }
+            return { ...state }
     }
 }
 
-const store = redux.createStore(chatRoomsReducer);
+const store = createStore(chatRoomsReducer);
 
 export default store;

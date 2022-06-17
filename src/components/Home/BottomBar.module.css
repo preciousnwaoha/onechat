@@ -1,0 +1,9 @@
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--home-bottom-bar-height);
+    background: black;
+    color: white;
+}
